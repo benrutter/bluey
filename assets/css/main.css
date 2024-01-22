@@ -1,16 +1,14 @@
 /* Markdown */
 :root{
-  --backgroundcolor: #232333;
-  --maincolor: #9DD5E3;
-  --bordercl: #9DD5E3;
-  --callouctcolor: #9DD5E3;
-  --hovercolor: #9DD5E3;
-  --darkMaincolor: dodgerblue;
+  --backgroundcolor: #12121E;
+  --maincolor: #77A29C;
+  --textcolor: #CADBE0;
 }
 
 html {
-  color: #232333;
-  font-family: 'Roboto Mono', monospace;
+  color: var(--textcolor);
+  background-color: var(--backgroundcolor);
+  font-family: 'Display Mono', monospace;
   font-size: 15px;
   line-height: 1.6em;
 }
@@ -28,18 +26,18 @@ body{
 }
 
 p {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Body Mono', sans-serif;
   line-height: 1.5;
 }
 
 hr {
   border: 0;
-  border-top: 3px dotted var(--bordercl);
+  border-top: 3px dotted var(--maincolor);
   margin: 1em 0;
 }
 
 blockquote {
-  border-left: 3px solid var(--bordercl);
+  border-left: 3px solid var(--maincolor);
   color: #737373;
   margin: 0;
   padding-left: 1em;
@@ -51,7 +49,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-    background-color: var(--hovercolor);
+    background-color: var(--maincolor);
     color: #fff;
 }
 
@@ -101,7 +99,7 @@ figure h4::before {
 
 /* Code blocks */
 code {
-  background-color: #f1f1f1;
+  background-color: #333;
   padding: .1em .2em;
 }
 
@@ -167,7 +165,7 @@ h6::before { color: var(--maincolor); content: '###### '; }
 footer {
   display: flex;
   align-items: center;
-  border-top: 0.4rem dotted var(--bordercl);
+  border-top: 0.4rem dotted var(--maincolor);
   padding: 2rem 0rem;
   margin-top: 2rem;
 }
@@ -202,13 +200,13 @@ article .title {
 
 /* Callout */
 .callout {
-  background-color: var(--callouctcolor);
+  background-color: var(--maincolor);
   color: #fff;
   padding: 1em;
 }
 
 .callout p {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Display Mono', monospace;
   margin: 0;
 }
 
@@ -218,7 +216,7 @@ article .title {
 
 .callout a:hover {
   background-color: #fff;
-  color: var(--callouctcolor);
+  color: var(--maincolor);
 }
 
 .site-description {
@@ -233,7 +231,7 @@ justify-content: space-between;
 }
 .tags a:hover{
   color:white;
-  background-color: var(--hovercolor); 
+  background-color: var(--maincolor); 
 }
 svg{
   max-height: 15px;
@@ -242,7 +240,7 @@ svg{
   color: white;
 }
 .draft-label{ 
-    color: var(--bordercl);
+    color: var(--maincolor);
     text-decoration: none;
     padding: 2px 4px;
     border-radius: 4px;
@@ -333,3 +331,4 @@ table td{
   padding: 6px 13px;
   border: 1px solid #dfe2e5;
 }
+
