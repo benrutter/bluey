@@ -61,7 +61,7 @@ ul li {
   text-indent: -2ch;
 }
 ul > li::before {
-  content: '* ';
+  content: '\00a0\00a0- ';
   font-weight: bold;
 }
 
